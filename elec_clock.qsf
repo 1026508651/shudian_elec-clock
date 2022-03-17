@@ -47,3 +47,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VHDL_FILE elec_clock.vhd
 set_global_assignment -name VHDL_FILE time_trans.vhd
+set_global_assignment -name VHDL_FILE sec_count.vhd
+set_global_assignment -name VHDL_FILE minute_count.vhd
+set_global_assignment -name VHDL_FILE hour_count.vhd

@@ -94,6 +94,7 @@ signal Blick_Control_Min:std_logic;
 signal Cout2: std_logic;
 signal Change_Hour: std_logic;
 signal Blick_Control_Hou:std_logic;
+signal Cout3: std_logic;
 begin
 	T1:time_trans port map(CLK_0=>CLK_0,Change_En=>Change_En,Change_Sec=>Change_Sec,CLK_1=>CLK_1,STD_ONE=>STD_ONE);
 	T2:sec_count port map(CLK_1=>CLK_1,CLR=>CLR,Blick_Control_Sec=>Blick_Control_Sec,LED_1=>LED_1,LED_2=>LED_2,Cout1=>Cout1);

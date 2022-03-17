@@ -19,39 +19,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-elec_clock
-# storage
-db|elec_clock.(0).cnf
-db|elec_clock.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-elec_clock.vhd
-a5801509c38442655b38cdde7e4f
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 time_trans
 # storage
 db|elec_clock.(1).cnf
@@ -77,6 +44,168 @@ ON
 }
 # hierarchies {
 time_trans:T1
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+sec_count
+# storage
+db|elec_clock.(2).cnf
+db|elec_clock.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sec_count.vhd
+5ee7ecefa58510ffab70b940609ff89
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_2)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sec_count:T2
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+minute_count
+# storage
+db|elec_clock.(3).cnf
+db|elec_clock.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+minute_count.vhd
+3d3d42412bd95bed7512454f342eb41
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_3)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_4)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+minute_count:T3
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+elec_clock
+# storage
+db|elec_clock.(0).cnf
+db|elec_clock.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+elec_clock.vhd
+cd7560fff0a360b456fa3fa64cd5e05d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+hour_count
+# storage
+db|elec_clock.(4).cnf
+db|elec_clock.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hour_count.vhd
+d1720951c4ec7449e91276cd425afe0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_5)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_6)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+hour_count:T4
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
