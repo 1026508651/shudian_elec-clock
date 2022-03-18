@@ -41,7 +41,7 @@ begin
 	with Blick_Control_Min select
 	LED_3<="ZZZZ" when '0',
 		   L1 when others;
-	with Blick_Control_Sec select
+	with Blick_Control_Min select
 	LED_4<="ZZZZ" when '0',
 		   L2 when others;
 end main;

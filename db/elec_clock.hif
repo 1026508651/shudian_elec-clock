@@ -52,6 +52,39 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 
 # end
 # entity
+elec_clock
+# storage
+db|elec_clock.(0).cnf
+db|elec_clock.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+elec_clock.vhd
+cd7560fff0a360b456fa3fa64cd5e05d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 sec_count
 # storage
 db|elec_clock.(2).cnf
@@ -63,7 +96,7 @@ ON
 # case_insensitive
 # source_file
 sec_count.vhd
-5ee7ecefa58510ffab70b940609ff89
+4d3cf1a47c99667ba3eba570c0ebecd1
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -106,7 +139,7 @@ ON
 # case_insensitive
 # source_file
 minute_count.vhd
-3d3d42412bd95bed7512454f342eb41
+fe671cb5e9f2d983ff7eaf1741d89a
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -138,39 +171,6 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 
 # end
 # entity
-elec_clock
-# storage
-db|elec_clock.(0).cnf
-db|elec_clock.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-elec_clock.vhd
-cd7560fff0a360b456fa3fa64cd5e05d
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 hour_count
 # storage
 db|elec_clock.(4).cnf
@@ -182,7 +182,7 @@ ON
 # case_insensitive
 # source_file
 hour_count.vhd
-d1720951c4ec7449e91276cd425afe0
+7cdae56c7da2f6b9a429816fae5efa
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -206,6 +206,39 @@ USR
 }
 # hierarchies {
 hour_count:T4
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+config
+# storage
+db|elec_clock.(5).cnf
+db|elec_clock.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+config.vhd
+3878e014788a2a3b2d5624bfd6c4b63
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+config:T5
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf

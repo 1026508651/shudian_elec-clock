@@ -38,9 +38,9 @@ architecture main of sec_count is
 	T1:count_10 port map(CLK=>CLK_1,CLR=>CLR,Lout=>L1,Cout1=>C1);
 	T2:count_6 port map(CLK=>C1,CLR=>CLR,Lout=>L2,Cout1=>Cout1);
 	with Blick_Control_Sec select
-	LED_1<="ZZZZ" when '0',
+	LED_1<="ZZZZ" when '1',
 		   L1 when others;
 	with Blick_Control_Sec select
-	LED_2<="ZZZZ" when '0',
+	LED_2<="ZZZZ" when '1',
 		   L2 when others;
 end main;

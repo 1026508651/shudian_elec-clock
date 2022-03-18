@@ -31,7 +31,7 @@ component four2seven is
 		input:std_logic_vector(3 downto 0);
 		output:std_logic_vector(6 downto 0)
 	);
-end four2seven;
+end component four2seven;
 begin
 	enter<=Change_Hour or Cout2;
 	T1:count_24 port map(CLK=>enter,CLR=>CLR,temp1=>L5,temp10=>L6_1);
