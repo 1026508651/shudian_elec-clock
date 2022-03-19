@@ -29,7 +29,7 @@ architecture main of musicins is
 			output:out std_logic
 		);
 	end component do_count_10;
-	component fa_count_4 is
+	component fa_count_7 is
 		port(
 			EN:in std_logic;
 			CLK:in std_logic;

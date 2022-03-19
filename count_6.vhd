@@ -18,7 +18,7 @@ begin
  begin
   if(CLR='1')then
    temp1<="0000";
-  elsif(CLK='1')then
+  elsif(CLK'event and CLK='1')then
    if(temp1="0101")then
     temp1<="0000";
     Cout1<='1';
