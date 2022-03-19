@@ -51,3 +51,4 @@ set_global_assignment -name VHDL_FILE sec_count.vhd
 set_global_assignment -name VHDL_FILE minute_count.vhd
 set_global_assignment -name VHDL_FILE hour_count.vhd
 set_global_assignment -name VHDL_FILE config.vhd
+set_global_assignment -name VHDL_FILE musicins.vhd
