@@ -19,39 +19,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-time_trans
-# storage
-db|elec_clock.(1).cnf
-db|elec_clock.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-time_trans.vhd
-677395702288e83b86d9fedc6db4bc
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-time_trans:T1
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 elec_clock
 # storage
 db|elec_clock.(0).cnf
@@ -79,7 +46,40 @@ ON
 |
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+time_trans
+# storage
+db|elec_clock.(1).cnf
+db|elec_clock.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+time_trans.vhd
+677395702288e83b86d9fedc6db4bc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+time_trans:T1
+}
+# lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
@@ -122,7 +122,85 @@ USR
 sec_count:T2
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_10
+# storage
+db|elec_clock.(3).cnf
+db|elec_clock.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count_10.vhd
+1d2e3793283fe3a55c8440a8c0a2446a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(lout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sec_count:T2|count_10:T1
+}
+# lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_6
+# storage
+db|elec_clock.(4).cnf
+db|elec_clock.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count_6.vhd
+d998aa54759be06a664cd3e1d844a73
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(lout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sec_count:T2|count_6:T2
+}
+# lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
@@ -130,8 +208,8 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 # entity
 minute_count
 # storage
-db|elec_clock.(3).cnf
-db|elec_clock.(3).cnf
+db|elec_clock.(5).cnf
+db|elec_clock.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -165,7 +243,85 @@ USR
 minute_count:T3
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_10
+# storage
+db|elec_clock.(6).cnf
+db|elec_clock.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count_10.vhd
+1d2e3793283fe3a55c8440a8c0a2446a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(lout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+minute_count:T3|count_10:T1
+}
+# lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_6
+# storage
+db|elec_clock.(7).cnf
+db|elec_clock.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count_6.vhd
+d998aa54759be06a664cd3e1d844a73
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(lout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+minute_count:T3|count_6:T2
+}
+# lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
@@ -173,8 +329,8 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 # entity
 hour_count
 # storage
-db|elec_clock.(4).cnf
-db|elec_clock.(4).cnf
+db|elec_clock.(8).cnf
+db|elec_clock.(8).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -208,7 +364,7 @@ USR
 hour_count:T4
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
@@ -216,8 +372,8 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 # entity
 config
 # storage
-db|elec_clock.(5).cnf
-db|elec_clock.(5).cnf
+db|elec_clock.(9).cnf
+db|elec_clock.(9).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -241,7 +397,7 @@ ON
 config:T5
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
@@ -249,8 +405,8 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 # entity
 musicins
 # storage
-db|elec_clock.(6).cnf
-db|elec_clock.(6).cnf
+db|elec_clock.(10).cnf
+db|elec_clock.(10).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -274,7 +430,7 @@ ON
 musicins:T6
 }
 # lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+d:|baidunetdiskdownload|quartusii 9.0|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
