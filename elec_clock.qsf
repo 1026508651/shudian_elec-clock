@@ -53,3 +53,5 @@ set_global_assignment -name VHDL_FILE hour_count.vhd
 set_global_assignment -name VHDL_FILE config.vhd
 set_global_assignment -name VHDL_FILE musicins.vhd
 set_global_assignment -name VHDL_FILE count_2500.vhd
+set_global_assignment -name VHDL_FILE count_4.vhd
+set_global_assignment -name VHDL_FILE two2four.vhd
