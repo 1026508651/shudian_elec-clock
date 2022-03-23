@@ -1,0 +1,26 @@
+|hour_count
+clr => cnt1[3].ACLR
+clr => cnt1[2].ACLR
+clr => cnt1[1].ACLR
+clr => cnt1[0].ACLR
+clr => cnt0[1].ACLR
+clr => cnt0[2].ACLR
+clr => cnt0[3].ACLR
+clr => cnt0[0].ACLR
+Cout2 => cnt0[1].LATCH_ENABLE
+Cout2 => cnt0[2].LATCH_ENABLE
+Cout2 => cnt0[3].LATCH_ENABLE
+Cout2 => cnt0[0].LATCH_ENABLE
+Cout2 => cnt1[3]~5.IN0
+Cout2 => Cout3.DATAIN
+Cout3 <= Cout2.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= cnt1[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= cnt1[1].DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= cnt1[2].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= cnt1[3].DB_MAX_OUTPUT_PORT_TYPE
+l[0] <= cnt0[0].DB_MAX_OUTPUT_PORT_TYPE
+l[1] <= cnt0[1].DB_MAX_OUTPUT_PORT_TYPE
+l[2] <= cnt0[2].DB_MAX_OUTPUT_PORT_TYPE
+l[3] <= cnt0[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
