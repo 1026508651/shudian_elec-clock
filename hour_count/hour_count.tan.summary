@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.537 ns
+From           : cnt1[0]
+To             : h[0]
+From Clock     : Cout2
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.135 ns
+From           : Cout2
+To             : Cout3
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Cout2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 124.33 MHz ( period = 8.043 ns )
+From           : cnt1[0]
+To             : cnt0[2]
+From Clock     : Cout2
+To Clock       : Cout2
+Failed Paths   : 0
+
+Type           : Clock Hold: 'Cout2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : cnt0[0]
+To             : cnt1[1]
+From Clock     : Cout2
+To Clock       : Cout2
+Failed Paths   : 21
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 21
+
+--------------------------------------------------------------------------------------
+
