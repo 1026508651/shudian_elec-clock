@@ -17,7 +17,7 @@ begin
 	process(CLK_0)
 	begin
 		if(CLK_0'event and CLK_0='1')then
-			if(temp=2499)then
+			if(temp=5)then
 				temp<=0;
 			else
 				temp<=temp+1;
@@ -28,7 +28,7 @@ begin
 	process(temp,CLK_0)
 	begin
 		if(CLK_0'event and CLK_0='1')then
-			if(temp=2499)then
+			if(temp=5)then
 				qout<='1';
 			else
 				qout<='0';

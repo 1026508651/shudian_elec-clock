@@ -27,9 +27,9 @@ begin
 	process(temp)
 	begin	
 		if(temp="00")then
-			Change_En<='0';
-		else
 			Change_En<='1';
+		else
+			Change_En<='0';
 		end if;
 	end process;
 	output<=temp;

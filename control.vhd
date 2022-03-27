@@ -21,7 +21,6 @@ begin
 	begin
 		if(beginning='1')then
 			stop <='1';
-			counter<="0000";
 		end if;
 	end process;
 	

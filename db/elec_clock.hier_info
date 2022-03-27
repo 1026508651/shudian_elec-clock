@@ -1,35 +1,358 @@
 |elec_clock
-CLK_0 => ~NO_FANOUT~
-CLR => ~NO_FANOUT~
-Button1 => ~NO_FANOUT~
-Button2 => ~NO_FANOUT~
-LED_1[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_1[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_1[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_1[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_2[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_2[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_2[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_2[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_3[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_3[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_3[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_3[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_4[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_4[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_4[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_4[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_5[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_5[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_5[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_5[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[0] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[1] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[2] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[3] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[4] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[5] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-LED_6[6] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
-MUSIC <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+CLK_0 => musicins:T6.CLK_0
+CLK_0 => time_trans:T1.CLK_0
+CLR => hour_count:T4.CLR
+CLR => minute_count:T3.CLR
+CLR => sec_count:T2.CLR
+Button1 => config:T5.Button1
+Button2 => config:T5.Button2
+LED_1[0] <= sec_count:T2.LED_1[0]
+LED_1[1] <= sec_count:T2.LED_1[1]
+LED_1[2] <= sec_count:T2.LED_1[2]
+LED_1[3] <= sec_count:T2.LED_1[3]
+LED_2[0] <= sec_count:T2.LED_2[0]
+LED_2[1] <= sec_count:T2.LED_2[1]
+LED_2[2] <= sec_count:T2.LED_2[2]
+LED_2[3] <= sec_count:T2.LED_2[3]
+LED_3[0] <= minute_count:T3.LED_3[0]
+LED_3[1] <= minute_count:T3.LED_3[1]
+LED_3[2] <= minute_count:T3.LED_3[2]
+LED_3[3] <= minute_count:T3.LED_3[3]
+LED_4[0] <= minute_count:T3.LED_4[0]
+LED_4[1] <= minute_count:T3.LED_4[1]
+LED_4[2] <= minute_count:T3.LED_4[2]
+LED_4[3] <= minute_count:T3.LED_4[3]
+LED_5[0] <= hour_count:T4.LED_5[0]
+LED_5[1] <= hour_count:T4.LED_5[1]
+LED_5[2] <= hour_count:T4.LED_5[2]
+LED_5[3] <= hour_count:T4.LED_5[3]
+LED_6[0] <= hour_count:T4.LED_6[0]
+LED_6[1] <= hour_count:T4.LED_6[1]
+LED_6[2] <= hour_count:T4.LED_6[2]
+LED_6[3] <= hour_count:T4.LED_6[3]
+LED_6[4] <= hour_count:T4.LED_6[4]
+LED_6[5] <= hour_count:T4.LED_6[5]
+LED_6[6] <= hour_count:T4.LED_6[6]
+MUSIC <= musicins:T6.MUSIC
+
+
+|elec_clock|time_trans:T1
+CLK_0 => count_2500:T1.CLK_0
+Change_En => count_2500:T1.Change_En
+Change_Sec => output1~0.IN0
+CLK_1 <= output1~0.DB_MAX_OUTPUT_PORT_TYPE
+STD_ONE <= count_2500:T1.CLK_1
+
+
+|elec_clock|time_trans:T1|count_2500:T1
+CLK_0 => temp[11].CLK
+CLK_0 => temp[10].CLK
+CLK_0 => temp[9].CLK
+CLK_0 => temp[8].CLK
+CLK_0 => temp[7].CLK
+CLK_0 => temp[6].CLK
+CLK_0 => temp[5].CLK
+CLK_0 => temp[4].CLK
+CLK_0 => temp[3].CLK
+CLK_0 => temp[2].CLK
+CLK_0 => temp[1].CLK
+CLK_0 => temp[0].CLK
+CLK_0 => qout.CLK
+Change_En => CLK_1~0.OUTPUTSELECT
+CLK_1 <= CLK_1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|sec_count:T2
+CLK_1 => count_10:T1.CLK
+CLR => count_6:T2.CLR
+CLR => count_10:T1.CLR
+Blick_Control_Sec => LED_1[3]~3.IN0
+LED_1[0] <= LED_1[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_1[1] <= LED_1[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_1[2] <= LED_1[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_1[3] <= LED_1[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_2[0] <= LED_2[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_2[1] <= LED_2[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_2[2] <= LED_2[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_2[3] <= LED_2[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+Cout1 <= count_6:T2.Cout1
+
+
+|elec_clock|sec_count:T2|count_10:T1
+CLK => temp[3].CLK
+CLK => temp[2].CLK
+CLK => temp[1].CLK
+CLK => temp[0].CLK
+CLK => Cout1~reg0.CLK
+CLR => temp[3].ACLR
+CLR => temp[2].ACLR
+CLR => temp[1].ACLR
+CLR => temp[0].ACLR
+CLR => Cout1~0.OUTPUTSELECT
+Lout[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+Lout[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+Lout[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+Lout[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+Cout1 <= Cout1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|sec_count:T2|count_6:T2
+CLK => temp1[3].CLK
+CLK => temp1[2].CLK
+CLK => temp1[1].CLK
+CLK => temp1[0].CLK
+CLK => Cout1~reg0.CLK
+CLR => temp1[3].ACLR
+CLR => temp1[2].ACLR
+CLR => temp1[1].ACLR
+CLR => temp1[0].ACLR
+CLR => Cout1~0.OUTPUTSELECT
+Lout[0] <= temp1[0].DB_MAX_OUTPUT_PORT_TYPE
+Lout[1] <= temp1[1].DB_MAX_OUTPUT_PORT_TYPE
+Lout[2] <= temp1[2].DB_MAX_OUTPUT_PORT_TYPE
+Lout[3] <= temp1[3].DB_MAX_OUTPUT_PORT_TYPE
+Cout1 <= Cout1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|minute_count:T3
+Cout1 => enter.IN0
+CLR => count_6:T2.CLR
+CLR => count_10:T1.CLR
+Change_Min => enter.IN1
+Blick_Control_Min => LED_3[3]~3.IN0
+LED_3[0] <= LED_3[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_3[1] <= LED_3[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_3[2] <= LED_3[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_3[3] <= LED_3[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_4[0] <= LED_4[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_4[1] <= LED_4[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_4[2] <= LED_4[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_4[3] <= LED_4[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+Cout2 <= count_6:T2.Cout1
+
+
+|elec_clock|minute_count:T3|count_10:T1
+CLK => temp[3].CLK
+CLK => temp[2].CLK
+CLK => temp[1].CLK
+CLK => temp[0].CLK
+CLK => Cout1~reg0.CLK
+CLR => temp[3].ACLR
+CLR => temp[2].ACLR
+CLR => temp[1].ACLR
+CLR => temp[0].ACLR
+CLR => Cout1~0.OUTPUTSELECT
+Lout[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+Lout[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+Lout[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+Lout[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+Cout1 <= Cout1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|minute_count:T3|count_6:T2
+CLK => temp1[3].CLK
+CLK => temp1[2].CLK
+CLK => temp1[1].CLK
+CLK => temp1[0].CLK
+CLK => Cout1~reg0.CLK
+CLR => temp1[3].ACLR
+CLR => temp1[2].ACLR
+CLR => temp1[1].ACLR
+CLR => temp1[0].ACLR
+CLR => Cout1~0.OUTPUTSELECT
+Lout[0] <= temp1[0].DB_MAX_OUTPUT_PORT_TYPE
+Lout[1] <= temp1[1].DB_MAX_OUTPUT_PORT_TYPE
+Lout[2] <= temp1[2].DB_MAX_OUTPUT_PORT_TYPE
+Lout[3] <= temp1[3].DB_MAX_OUTPUT_PORT_TYPE
+Cout1 <= Cout1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|hour_count:T4
+CLR => count_24:T1.CLR
+Cout2 => enter.IN0
+Change_Hour => enter.IN1
+Blick_Control_Hou => LED_5[3]~3.IN0
+LED_5[0] <= LED_5[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_5[1] <= LED_5[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_5[2] <= LED_5[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_5[3] <= LED_5[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[0] <= LED_6[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[1] <= LED_6[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[2] <= LED_6[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[3] <= LED_6[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[4] <= LED_6[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[5] <= LED_6[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+LED_6[6] <= LED_6[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|hour_count:T4|count_24:T1
+CLK => cnt0[3].CLK
+CLK => cnt0[2].CLK
+CLK => cnt0[1].CLK
+CLK => cnt0[0].CLK
+CLK => cnt1[3].CLK
+CLK => cnt1[2].CLK
+CLK => cnt1[1].CLK
+CLK => cnt1[0].CLK
+CLR => cnt0[3].ACLR
+CLR => cnt0[2].ACLR
+CLR => cnt0[1].ACLR
+CLR => cnt0[0].ACLR
+CLR => cnt1[3].ACLR
+CLR => cnt1[2].ACLR
+CLR => cnt1[1].ACLR
+CLR => cnt1[0].ACLR
+temp1[0] <= cnt0[0].DB_MAX_OUTPUT_PORT_TYPE
+temp1[1] <= cnt0[1].DB_MAX_OUTPUT_PORT_TYPE
+temp1[2] <= cnt0[2].DB_MAX_OUTPUT_PORT_TYPE
+temp1[3] <= cnt0[3].DB_MAX_OUTPUT_PORT_TYPE
+temp10[0] <= cnt1[0].DB_MAX_OUTPUT_PORT_TYPE
+temp10[1] <= cnt1[1].DB_MAX_OUTPUT_PORT_TYPE
+temp10[2] <= cnt1[2].DB_MAX_OUTPUT_PORT_TYPE
+temp10[3] <= cnt1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|hour_count:T4|four2seven:T2
+input[0] => Mux6.IN19
+input[0] => Mux5.IN19
+input[0] => Mux4.IN19
+input[0] => Mux3.IN19
+input[0] => Mux2.IN19
+input[0] => Mux1.IN19
+input[0] => Mux0.IN19
+input[1] => Mux6.IN18
+input[1] => Mux5.IN18
+input[1] => Mux4.IN18
+input[1] => Mux3.IN18
+input[1] => Mux2.IN18
+input[1] => Mux1.IN18
+input[1] => Mux0.IN18
+input[2] => Mux6.IN17
+input[2] => Mux5.IN17
+input[2] => Mux4.IN17
+input[2] => Mux3.IN17
+input[2] => Mux2.IN17
+input[2] => Mux1.IN17
+input[2] => Mux0.IN17
+input[3] => Mux6.IN16
+input[3] => Mux5.IN16
+input[3] => Mux4.IN16
+input[3] => Mux3.IN16
+input[3] => Mux2.IN16
+input[3] => Mux1.IN16
+input[3] => Mux0.IN16
+output[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|config:T5
+STD_ONE => two2four:T3.EN
+Button1 => count_4:T1.CLK
+Button2 => two2four:T2.EN
+Change_En <= count_4:T1.Change_En
+Change_Sec <= two2four:T2.output[1]
+Change_Min <= two2four:T2.output[2]
+Change_Hour <= two2four:T2.output[3]
+Blick_Control_Sec <= Blick_Control_Sec~0.DB_MAX_OUTPUT_PORT_TYPE
+Blick_Control_Min <= Blick_Control_Min~0.DB_MAX_OUTPUT_PORT_TYPE
+Blick_Control_Hou <= Blick_Control_Hou~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|config:T5|count_4:T1
+CLK => temp[1].CLK
+CLK => temp[0].CLK
+output[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+Change_En <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|config:T5|two2four:T2
+EN => output~3.OUTPUTSELECT
+EN => output~2.OUTPUTSELECT
+EN => output~1.OUTPUTSELECT
+EN => output~0.OUTPUTSELECT
+input[0] => Mux3.IN5
+input[0] => Mux2.IN5
+input[0] => Mux1.IN5
+input[0] => Mux0.IN5
+input[1] => Mux3.IN4
+input[1] => Mux2.IN4
+input[1] => Mux1.IN4
+input[1] => Mux0.IN4
+output[0] <= output~3.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output~1.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|config:T5|two2four:T3
+EN => output~3.OUTPUTSELECT
+EN => output~2.OUTPUTSELECT
+EN => output~1.OUTPUTSELECT
+EN => output~0.OUTPUTSELECT
+input[0] => Mux3.IN5
+input[0] => Mux2.IN5
+input[0] => Mux1.IN5
+input[0] => Mux0.IN5
+input[1] => Mux3.IN4
+input[1] => Mux2.IN4
+input[1] => Mux1.IN4
+input[1] => Mux0.IN4
+output[0] <= output~3.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output~1.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|musicins:T6
+STD_ONE => control:T1.part
+Cout3 => control:T1.beginning
+CLK_0 => la_count_6:T4.CLK
+CLK_0 => fa_count_7:T3.CLK
+CLK_0 => do_count_10:T2.CLK
+MUSIC <= MUSIC~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|musicins:T6|control:T1
+beginning => ~NO_FANOUT~
+part => counter[3].CLK
+part => counter[2].CLK
+part => counter[1].CLK
+part => counter[0].CLK
+do_1 <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+fa_4 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+la_6 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|musicins:T6|do_count_10:T2
+EN => process_0~0.IN0
+CLK => temp.CLK
+CLK => counter[2].CLK
+CLK => counter[1].CLK
+CLK => counter[0].CLK
+output <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|musicins:T6|fa_count_7:T3
+EN => process_1~0.IN0
+CLK => temp1.CLK
+CLK => counter[2].CLK
+CLK => counter[1].CLK
+CLK => counter[0].CLK
+CLK => process_1~1.IN0
+output <= output~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elec_clock|musicins:T6|la_count_6:T4
+EN => process_0~0.IN0
+CLK => temp.CLK
+CLK => counter[1].CLK
+CLK => counter[0].CLK
+output <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 

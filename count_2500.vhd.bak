@@ -11,13 +11,13 @@ port(
 end count_2500;
 
 architecture art of count_2500 is
-	signal temp:integer range 0 to 99;
+	signal temp:integer range 0 to 2499;
 	signal qout: std_logic;
 begin	
 	process(CLK_0)
 	begin
 		if(CLK_0'event and CLK_0='1')then
-			if(temp=99)then
+			if(temp=2499)then
 				temp<=0;
 			else
 				temp<=temp+1;
@@ -28,7 +28,7 @@ begin
 	process(temp,CLK_0)
 	begin
 		if(CLK_0'event and CLK_0='1')then
-			if(temp=99)then
+			if(temp=2499)then
 				qout<='1';
 			else
 				qout<='0';

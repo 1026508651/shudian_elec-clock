@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="elec_clock">
+		<CBX_INST_ENTRY INSTANCE_NAME="|elec_clock|hour_count:T4|count_24:T1|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_3kh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|elec_clock|time_trans:T1|count_2500:T1|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_6ph.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -69,9 +69,9 @@ port(
 	Change_Sec: out std_logic;
 	Change_Min: out std_logic;
 	Change_Hour: out std_logic;
-	Blick_Control_Sec: in std_logic;
-	Blick_Control_Min: in std_logic;
-	Blick_Control_Hou: in std_logic
+	Blick_Control_Sec: out std_logic;
+	Blick_Control_Min: out std_logic;
+	Blick_Control_Hou: out std_logic
 );
 end component config;
 component musicins is

@@ -54,7 +54,7 @@ begin
 			when "0111" => fa_4 <='1'; 
 			when "1000" => fa_4 <='1'; 
 			when "1001" => fa_4 <='1'; 
-			when others => ;
+			when others => stop <='0';
 		end case;
 	end process;		
 

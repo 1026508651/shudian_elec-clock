@@ -1,9 +1,9 @@
-Fitter Status : Successful - Wed Mar 16 22:38:06 2022
+Fitter Status : Successful - Sun Mar 27 13:31:11 2022
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
 Revision Name : elec_clock
 Top-level Entity Name : elec_clock
 Family : MAX7000S
 Device : EPM7128SLC84-15
 Timing Models : Final
-Total macrocells : 28 / 128 ( 22 % )
+Total macrocells : 74 / 128 ( 58 % )
 Total pins : 36 / 68 ( 53 % )

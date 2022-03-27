@@ -15,10 +15,10 @@ architecture art of two2four is
 	signal temp : std_logic_vector(3 downto 0);
 begin
 		with input select
-			temp<=	"0001"when"00",
-					"0010"when"01",
-					"0100"when"10",
-					"1000"when"11";
+			temp<=	"1110"when"00",
+					"1101"when"01",
+					"1011"when"10",
+					"0111"when"11";
 	process(EN)
 	begin
 		if(EN='1')then

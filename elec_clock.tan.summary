@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -4.000 ns
+From           : CLR
+To             : minute_count:T3|count_10:T1|Cout1
+From Clock     : --
+To Clock       : Button2
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 93.000 ns
+From           : hour_count:T4|count_24:T1|cnt1[1]
+To             : LED_6[0]
+From Clock     : Button1
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 56.000 ns
+From           : CLR
+To             : minute_count:T3|count_6:T2|Cout1
+From Clock     : --
+To Clock       : Button1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Button2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.15 MHz ( period = 66.000 ns )
+From           : hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2]
+To             : hour_count:T4|count_24:T1|cnt1[1]
+From Clock     : Button2
+To Clock       : Button2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Button1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.15 MHz ( period = 66.000 ns )
+From           : hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2]
+To             : hour_count:T4|count_24:T1|cnt1[1]
+From Clock     : Button1
+To Clock       : Button1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK_0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 33.33 MHz ( period = 30.000 ns )
+From           : musicins:T6|control:T1|counter[1]
+To             : musicins:T6|do_count_10:T2|counter[2]
+From Clock     : CLK_0
+To Clock       : CLK_0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'Button1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : hour_count:T4|count_24:T1|cnt1[0]
+To             : hour_count:T4|count_24:T1|cnt1[0]
+From Clock     : Button1
+To Clock       : Button1
+Failed Paths   : 82
+
+Type           : Clock Hold: 'Button2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : hour_count:T4|count_24:T1|cnt1[0]
+To             : hour_count:T4|count_24:T1|cnt1[0]
+From Clock     : Button2
+To Clock       : Button2
+Failed Paths   : 82
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 164
+
+--------------------------------------------------------------------------------------
+

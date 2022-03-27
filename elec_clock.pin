@@ -68,55 +68,55 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 GND+                         : 1         :        :                   :         :           :                
 GND+                         : 2         :        :                   :         :           :                
 VCCINT                       : 3         : power  :                   : 5.0V    :           :                
-LED_2[3]                     : 4         : output : TTL               :         :           : N              
-LED_2[2]                     : 5         : output : TTL               :         :           : N              
-LED_2[1]                     : 6         : output : TTL               :         :           : N              
+LED_5[3]                     : 4         : output : TTL               :         :           : N              
+LED_6[6]                     : 5         : output : TTL               :         :           : N              
+LED_4[2]                     : 6         : output : TTL               :         :           : N              
 GND                          : 7         : gnd    :                   :         :           :                
-LED_2[0]                     : 8         : output : TTL               :         :           : N              
-LED_1[3]                     : 9         : output : TTL               :         :           : N              
-LED_1[2]                     : 10        : output : TTL               :         :           : N              
-LED_1[1]                     : 11        : output : TTL               :         :           : N              
-LED_1[0]                     : 12        : output : TTL               :         :           : N              
+LED_4[1]                     : 8         : output : TTL               :         :           : N              
+LED_5[2]                     : 9         : output : TTL               :         :           : N              
+LED_5[0]                     : 10        : output : TTL               :         :           : N              
+LED_5[1]                     : 11        : output : TTL               :         :           : N              
+RESERVED                     : 12        :        :                   :         :           :                
 VCCIO                        : 13        : power  :                   : 5.0V    :           :                
 TDI                          : 14        : input  : TTL               :         :           : N              
-LED_4[2]                     : 15        : output : TTL               :         :           : N              
-LED_4[1]                     : 16        : output : TTL               :         :           : N              
-LED_4[0]                     : 17        : output : TTL               :         :           : N              
-LED_3[3]                     : 18        : output : TTL               :         :           : N              
+RESERVED                     : 15        :        :                   :         :           :                
+RESERVED                     : 16        :        :                   :         :           :                
+RESERVED                     : 17        :        :                   :         :           :                
+RESERVED                     : 18        :        :                   :         :           :                
 GND                          : 19        : gnd    :                   :         :           :                
-LED_3[2]                     : 20        : output : TTL               :         :           : N              
-LED_3[1]                     : 21        : output : TTL               :         :           : N              
-LED_3[0]                     : 22        : output : TTL               :         :           : N              
+RESERVED                     : 20        :        :                   :         :           :                
+RESERVED                     : 21        :        :                   :         :           :                
+MUSIC                        : 22        : output : TTL               :         :           : N              
 TMS                          : 23        : input  : TTL               :         :           : N              
-LED_6[1]                     : 24        : output : TTL               :         :           : N              
-LED_6[0]                     : 25        : output : TTL               :         :           : N              
+LED_2[0]                     : 24        : output : TTL               :         :           : N              
+LED_1[0]                     : 25        : output : TTL               :         :           : N              
 VCCIO                        : 26        : power  :                   : 5.0V    :           :                
-LED_5[3]                     : 27        : output : TTL               :         :           : N              
-LED_5[2]                     : 28        : output : TTL               :         :           : N              
-LED_5[1]                     : 29        : output : TTL               :         :           : N              
-LED_5[0]                     : 30        : output : TTL               :         :           : N              
-LED_4[3]                     : 31        : output : TTL               :         :           : N              
+RESERVED                     : 27        :        :                   :         :           :                
+LED_1[1]                     : 28        : output : TTL               :         :           : N              
+LED_3[0]                     : 29        : output : TTL               :         :           : N              
+LED_1[3]                     : 30        : output : TTL               :         :           : N              
+LED_1[2]                     : 31        : output : TTL               :         :           : N              
 GND                          : 32        : gnd    :                   :         :           :                
 CLR                          : 33        : input  : TTL               :         :           : N              
 RESERVED                     : 34        :        :                   :         :           :                
-MUSIC                        : 35        : output : TTL               :         :           : N              
-LED_6[6]                     : 36        : output : TTL               :         :           : N              
-LED_6[5]                     : 37        : output : TTL               :         :           : N              
+LED_6[3]                     : 35        : output : TTL               :         :           : N              
+LED_6[0]                     : 36        : output : TTL               :         :           : N              
+LED_6[1]                     : 37        : output : TTL               :         :           : N              
 VCCIO                        : 38        : power  :                   : 5.0V    :           :                
-LED_6[4]                     : 39        : output : TTL               :         :           : N              
-LED_6[3]                     : 40        : output : TTL               :         :           : N              
-LED_6[2]                     : 41        : output : TTL               :         :           : N              
+LED_6[2]                     : 39        : output : TTL               :         :           : N              
+LED_6[4]                     : 40        : output : TTL               :         :           : N              
+LED_6[5]                     : 41        : output : TTL               :         :           : N              
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-RESERVED                     : 44        :        :                   :         :           :                
-RESERVED                     : 45        :        :                   :         :           :                
-RESERVED                     : 46        :        :                   :         :           :                
+LED_4[0]                     : 44        : output : TTL               :         :           : N              
+LED_2[2]                     : 45        : output : TTL               :         :           : N              
+LED_2[3]                     : 46        : output : TTL               :         :           : N              
 GND                          : 47        : gnd    :                   :         :           :                
-RESERVED                     : 48        :        :                   :         :           :                
-RESERVED                     : 49        :        :                   :         :           :                
-RESERVED                     : 50        :        :                   :         :           :                
-RESERVED                     : 51        :        :                   :         :           :                
-CLK_0                        : 52        : input  : TTL               :         :           : N              
+LED_4[3]                     : 48        : output : TTL               :         :           : N              
+LED_3[2]                     : 49        : output : TTL               :         :           : N              
+LED_3[3]                     : 50        : output : TTL               :         :           : N              
+LED_3[1]                     : 51        : output : TTL               :         :           : N              
+LED_2[1]                     : 52        : output : TTL               :         :           : N              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
 RESERVED                     : 54        :        :                   :         :           :                
 RESERVED                     : 55        :        :                   :         :           :                
@@ -125,7 +125,7 @@ RESERVED                     : 57        :        :                   :         
 RESERVED                     : 58        :        :                   :         :           :                
 GND                          : 59        : gnd    :                   :         :           :                
 RESERVED                     : 60        :        :                   :         :           :                
-RESERVED                     : 61        :        :                   :         :           :                
+Button1                      : 61        : input  : TTL               :         :           : N              
 TCK                          : 62        : input  : TTL               :         :           : N              
 RESERVED                     : 63        :        :                   :         :           :                
 RESERVED                     : 64        :        :                   :         :           :                
@@ -144,8 +144,8 @@ RESERVED                     : 76        :        :                   :         
 RESERVED                     : 77        :        :                   :         :           :                
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
 RESERVED                     : 79        :        :                   :         :           :                
-Button2                      : 80        : input  : TTL               :         :           : N              
-Button1                      : 81        : input  : TTL               :         :           : N              
+RESERVED                     : 80        :        :                   :         :           :                
+Button2                      : 81        : input  : TTL               :         :           : N              
 GND                          : 82        : gnd    :                   :         :           :                
-GND+                         : 83        :        :                   :         :           :                
+CLK_0                        : 83        : input  : TTL               :         :           : N              
 GND+                         : 84        :        :                   :         :           :                
