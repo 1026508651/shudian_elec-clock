@@ -55,3 +55,10 @@ set_global_assignment -name VHDL_FILE musicins.vhd
 set_global_assignment -name VHDL_FILE count_2500.vhd
 set_global_assignment -name VHDL_FILE count_4.vhd
 set_global_assignment -name VHDL_FILE two2four.vhd
+set_global_assignment -name VHDL_FILE count_24.vhd
+set_global_assignment -name VHDL_FILE four2seven.vhd
+set_global_assignment -name VHDL_FILE trash.vhd
+set_global_assignment -name VHDL_FILE control.vhd
+set_global_assignment -name VHDL_FILE do_count_10.vhd
+set_global_assignment -name VHDL_FILE la_count_6.vhd
+set_global_assignment -name VHDL_FILE fa_count_7.vhd
