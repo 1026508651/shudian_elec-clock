@@ -66,16 +66,24 @@ CLK_1 <= CLK_1~0.DB_MAX_OUTPUT_PORT_TYPE
 CLK_1 => count_10:T1.CLK
 CLR => count_6:T2.CLR
 CLR => count_10:T1.CLR
-Blick_Control_Sec => LED_1[3]~3.IN0
+Blick_Control_Sec => LED_1[3]~3.OE
+Blick_Control_Sec => LED_1[2]~2.OE
+Blick_Control_Sec => LED_1[1]~1.OE
+Blick_Control_Sec => LED_1[0]~0.OE
+Blick_Control_Sec => LED_2[3]~3.OE
+Blick_Control_Sec => LED_2[2]~2.OE
+Blick_Control_Sec => LED_2[1]~1.OE
+Blick_Control_Sec => LED_2[0]~0.OE
 LED_1[0] <= LED_1[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_1[1] <= LED_1[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_1[2] <= LED_1[2]~2.DB_MAX_OUTPUT_PORT_TYPE
-LED_1[3] <= LED_1[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_1[3] <= LED_1[3]~3.DB_MAX_OUTPUT_PORT_TYPE
 LED_2[0] <= LED_2[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_2[1] <= LED_2[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_2[2] <= LED_2[2]~2.DB_MAX_OUTPUT_PORT_TYPE
 LED_2[3] <= LED_2[3]~3.DB_MAX_OUTPUT_PORT_TYPE
 Cout1 <= count_6:T2.Cout1
+Cout3 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |elec_clock|sec_count:T2|count_10:T1
@@ -119,16 +127,24 @@ Cout1 => enter.IN0
 CLR => count_6:T2.CLR
 CLR => count_10:T1.CLR
 Change_Min => enter.IN1
-Blick_Control_Min => LED_3[3]~3.IN0
+Blick_Control_Min => LED_3[3]~3.OE
+Blick_Control_Min => LED_3[2]~2.OE
+Blick_Control_Min => LED_3[1]~1.OE
+Blick_Control_Min => LED_3[0]~0.OE
+Blick_Control_Min => LED_4[3]~3.OE
+Blick_Control_Min => LED_4[2]~2.OE
+Blick_Control_Min => LED_4[1]~1.OE
+Blick_Control_Min => LED_4[0]~0.OE
 LED_3[0] <= LED_3[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_3[1] <= LED_3[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_3[2] <= LED_3[2]~2.DB_MAX_OUTPUT_PORT_TYPE
-LED_3[3] <= LED_3[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_3[3] <= LED_3[3]~3.DB_MAX_OUTPUT_PORT_TYPE
 LED_4[0] <= LED_4[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_4[1] <= LED_4[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_4[2] <= LED_4[2]~2.DB_MAX_OUTPUT_PORT_TYPE
 LED_4[3] <= LED_4[3]~3.DB_MAX_OUTPUT_PORT_TYPE
 Cout2 <= count_6:T2.Cout1
+Cout4 <= Cout4~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |elec_clock|minute_count:T3|count_10:T1
@@ -171,11 +187,21 @@ Cout1 <= Cout1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 CLR => count_24:T1.CLR
 Cout2 => enter.IN0
 Change_Hour => enter.IN1
-Blick_Control_Hou => LED_5[3]~3.IN0
+Blick_Control_Hou => LED_5[3]~3.OE
+Blick_Control_Hou => LED_5[2]~2.OE
+Blick_Control_Hou => LED_5[1]~1.OE
+Blick_Control_Hou => LED_5[0]~0.OE
+Blick_Control_Hou => LED_6[6]~6.OE
+Blick_Control_Hou => LED_6[5]~5.OE
+Blick_Control_Hou => LED_6[4]~4.OE
+Blick_Control_Hou => LED_6[3]~3.OE
+Blick_Control_Hou => LED_6[2]~2.OE
+Blick_Control_Hou => LED_6[1]~1.OE
+Blick_Control_Hou => LED_6[0]~0.OE
 LED_5[0] <= LED_5[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_5[1] <= LED_5[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_5[2] <= LED_5[2]~2.DB_MAX_OUTPUT_PORT_TYPE
-LED_5[3] <= LED_5[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+LED_5[3] <= LED_5[3]~3.DB_MAX_OUTPUT_PORT_TYPE
 LED_6[0] <= LED_6[0]~0.DB_MAX_OUTPUT_PORT_TYPE
 LED_6[1] <= LED_6[1]~1.DB_MAX_OUTPUT_PORT_TYPE
 LED_6[2] <= LED_6[2]~2.DB_MAX_OUTPUT_PORT_TYPE
@@ -268,7 +294,7 @@ CLK => temp[1].CLK
 CLK => temp[0].CLK
 output[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
 output[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
-Change_En <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+Change_En <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |elec_clock|config:T5|two2four:T2
@@ -315,7 +341,8 @@ Cout3 => control:T1.beginning
 CLK_0 => la_count_6:T4.CLK
 CLK_0 => fa_count_7:T3.CLK
 CLK_0 => do_count_10:T2.CLK
-MUSIC <= MUSIC~1.DB_MAX_OUTPUT_PORT_TYPE
+MUSIC <= MUSIC~2.DB_MAX_OUTPUT_PORT_TYPE
+ct => MUSIC~2.IN1
 
 
 |elec_clock|musicins:T6|control:T1

@@ -10,7 +10,8 @@ port(
 	
 	LED_1: out std_logic_vector(3 downto 0);
 	LED_2: out std_logic_vector(3 downto 0);
-	Cout1: out std_logic
+	Cout1: out std_logic;
+	Cout3:out std_logic
 );
 end sec_count;
 architecture main of sec_count is
@@ -35,12 +36,14 @@ architecture main of sec_count is
 	signal L1: std_logic_vector(3 downto 0);
 	signal L2: std_logic_vector(3 downto 0);
 	begin
+	Cout3<='1' when L2="0000" else
+		   '0';
 	T1:count_10 port map(CLK=>CLK_1,CLR=>CLR,Lout=>L1,Cout1=>C1);
 	T2:count_6 port map(CLK=>C1,CLR=>CLR,Lout=>L2,Cout1=>Cout1);
 	with Blick_Control_Sec select
-	LED_1<="ZZZZ" when '1',
+	LED_1<="ZZZZ" when '0',
 		   L1 when others;
 	with Blick_Control_Sec select
-	LED_2<="ZZZZ" when '1',
+	LED_2<="ZZZZ" when '0',
 		   L2 when others;
 end main;

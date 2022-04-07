@@ -10,7 +10,8 @@ port(
 	Blick_Control_Min: in std_logic;
 	LED_3: out std_logic_vector(3 downto 0);
 	LED_4: out std_logic_vector(3 downto 0);
-	Cout2: out std_logic
+	Cout2: out std_logic;
+	Cout4: out std_logic
 );
 end minute_count;
 architecture main of minute_count is
@@ -35,13 +36,15 @@ architecture main of minute_count is
 	signal L1: std_logic_vector(3 downto 0);
 	signal L2: std_logic_vector(3 downto 0);
 begin
+	Cout4<='1' when (L1="0000" and L2="0000") else
+		   '0';
 	enter<=Cout1 or Change_Min;
 	T1:count_10 port map(CLK=>enter,CLR=>CLR,Lout=>L1,Cout1=>C1);
 	T2:count_6 port map(CLK=>C1,CLR=>CLR,Lout=>L2,Cout1=>Cout2);
 	with Blick_Control_Min select
-	LED_3<="ZZZZ" when '1',
+	LED_3<="ZZZZ" when '0',
 		   L1 when others;
 	with Blick_Control_Min select
-	LED_4<="ZZZZ" when '1',
+	LED_4<="ZZZZ" when '0',
 		   L2 when others;
 end main;

@@ -8,7 +8,8 @@ port(
 	STD_ONE: in std_logic;
 	Cout3:in std_logic;
 	CLK_0: in std_logic;
-	MUSIC:out std_logic
+	MUSIC:out std_logic;
+	ct:in std_logic
 );
 end musicins;
 
@@ -54,5 +55,5 @@ architecture main of musicins is
 	 T2:do_count_10 port map(EN=>en_do,CLK=>CLK_0,output=>out_do);
 	 T3:fa_count_7 port map(EN=>en_fa,CLK=>CLK_0,output=>out_fa); 
 	 T4:la_count_6 port map(EN=>en_la,CLK=>CLK_0,output=>out_la);
-	 MUSIC<=out_do or out_fa or out_la; 
+	 MUSIC<=(out_do or out_fa or out_la) and ct; 
 end main;

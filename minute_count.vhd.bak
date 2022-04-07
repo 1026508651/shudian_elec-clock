@@ -35,6 +35,7 @@ architecture main of minute_count is
 	signal L1: std_logic_vector(3 downto 0);
 	signal L2: std_logic_vector(3 downto 0);
 begin
+	
 	enter<=Cout1 or Change_Min;
 	T1:count_10 port map(CLK=>enter,CLR=>CLR,Lout=>L1,Cout1=>C1);
 	T2:count_6 port map(CLK=>C1,CLR=>CLR,Lout=>L2,Cout1=>Cout2);

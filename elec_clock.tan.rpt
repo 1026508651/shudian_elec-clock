@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for elec_clock
-Sun Mar 27 13:31:13 2022
+Thu Apr 07 12:11:55 2022
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -53,9 +53,9 @@ applicable agreement for further details.
 ; Clock Setup: 'Button2'       ; N/A                                      ; None          ; 15.15 MHz ( period = 66.000 ns ) ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; hour_count:T4|count_24:T1|cnt1[1]     ; Button2    ; Button2  ; 0            ;
 ; Clock Setup: 'Button1'       ; N/A                                      ; None          ; 15.15 MHz ( period = 66.000 ns ) ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; hour_count:T4|count_24:T1|cnt1[1]     ; Button1    ; Button1  ; 0            ;
 ; Clock Setup: 'CLK_0'         ; N/A                                      ; None          ; 33.33 MHz ( period = 30.000 ns ) ; musicins:T6|control:T1|counter[1]                        ; musicins:T6|do_count_10:T2|counter[2] ; CLK_0      ; CLK_0    ; 0            ;
-; Clock Hold: 'Button1'        ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; hour_count:T4|count_24:T1|cnt1[0]                        ; hour_count:T4|count_24:T1|cnt1[0]     ; Button1    ; Button1  ; 82           ;
+; Clock Hold: 'Button1'        ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; hour_count:T4|count_24:T1|cnt1[0]                        ; hour_count:T4|count_24:T1|cnt1[0]     ; Button1    ; Button1  ; 117          ;
 ; Clock Hold: 'Button2'        ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; hour_count:T4|count_24:T1|cnt1[0]                        ; hour_count:T4|count_24:T1|cnt1[0]     ; Button2    ; Button2  ; 82           ;
-; Total number of failed paths ;                                          ;               ;                                  ;                                                          ;                                       ;            ;          ; 164          ;
+; Total number of failed paths ;                                          ;               ;                                  ;                                                          ;                                       ;            ;          ; 199          ;
 +------------------------------+------------------------------------------+---------------+----------------------------------+----------------------------------------------------------+---------------------------------------+------------+----------+--------------+
 
 
@@ -178,11 +178,11 @@ applicable agreement for further details.
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; hour_count:T4|count_24:T1|cnt1[0]                        ; hour_count:T4|count_24:T1|cnt1[1]                        ; CLK_0      ; CLK_0    ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; hour_count:T4|count_24:T1|cnt1[1]                        ; CLK_0      ; CLK_0    ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; hour_count:T4|count_24:T1|cnt1[1]                        ; CLK_0      ; CLK_0    ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|temp[7]                      ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|temp[8]                      ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|temp[9]                      ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|temp[10]                     ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|temp[11]                     ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; time_trans:T1|count_2500:T1|qout                         ; time_trans:T1|count_2500:T1|qout                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|control:T1|counter[0]                        ; musicins:T6|control:T1|counter[0]                        ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[0]                         ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|control:T1|counter[0]                        ; musicins:T6|control:T1|counter[2]                        ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
@@ -253,15 +253,15 @@ applicable agreement for further details.
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|fa_count_7:T3|counter[2]                     ; musicins:T6|fa_count_7:T3|temp1                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|fa_count_7:T3|counter[1]                     ; musicins:T6|fa_count_7:T3|temp1                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|fa_count_7:T3|temp1                          ; musicins:T6|fa_count_7:T3|temp1                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[1]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[0]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[2]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|temp                          ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|Cout1                            ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|Cout1                            ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|Cout1                            ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|Cout1                            ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sec_count:T2|count_6:T2|Cout1                            ; sec_count:T2|count_6:T2|Cout1                            ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[1]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[0]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|counter[2]                    ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; musicins:T6|do_count_10:T2|temp                          ; musicins:T6|do_count_10:T2|temp                          ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; minute_count:T3|count_10:T1|temp[0]                      ; minute_count:T3|count_10:T1|temp[0]                      ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; minute_count:T3|count_10:T1|temp[0]                      ; minute_count:T3|count_10:T1|temp[2]                      ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; minute_count:T3|count_10:T1|temp[2]                      ; minute_count:T3|count_10:T1|temp[2]                      ; CLK_0      ; CLK_0    ; None                        ; None                      ; 8.000 ns                ;
@@ -415,11 +415,45 @@ applicable agreement for further details.
 ; N/A   ; 25.64 MHz ( period = 39.000 ns ) ; minute_count:T3|count_6:T2|temp1[3]                      ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 25.64 MHz ( period = 39.000 ns ) ; minute_count:T3|count_6:T2|temp1[1]                      ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 25.64 MHz ( period = 39.000 ns ) ; minute_count:T3|count_6:T2|Cout1                         ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[0]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_10:T1|Cout1                           ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[0]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 47.62 MHz ( period = 21.000 ns ) ; sec_count:T2|count_6:T2|Cout1                            ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; config:T5|count_4:T1|temp[0]                             ; config:T5|count_4:T1|temp[0]                             ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; config:T5|count_4:T1|temp[0]                             ; config:T5|count_4:T1|temp[1]                             ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; config:T5|count_4:T1|temp[1]                             ; config:T5|count_4:T1|temp[1]                             ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[0]                        ; musicins:T6|control:T1|counter[0]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[0]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[0]                        ; musicins:T6|control:T1|counter[2]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[2]                        ; musicins:T6|control:T1|counter[2]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[1]                        ; musicins:T6|control:T1|counter[2]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
@@ -431,40 +465,6 @@ applicable agreement for further details.
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[2]                        ; musicins:T6|control:T1|counter[3]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[1]                        ; musicins:T6|control:T1|counter[3]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 ; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; musicins:T6|control:T1|counter[3]                        ; musicins:T6|control:T1|counter[3]                        ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_10:T1|Cout1                           ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[0]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
-; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; sec_count:T2|count_6:T2|Cout1                            ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                        ; None                      ; 8.000 ns                ;
 +-------+----------------------------------+----------------------------------------------------------+----------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
 
 
@@ -680,6 +680,41 @@ applicable agreement for further details.
 ; Not operational: Clock Skew > Data Delay ; minute_count:T3|count_6:T2|temp1[3]                      ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
 ; Not operational: Clock Skew > Data Delay ; minute_count:T3|count_6:T2|temp1[1]                      ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
 ; Not operational: Clock Skew > Data Delay ; minute_count:T3|count_6:T2|Cout1                         ; minute_count:T3|count_6:T2|Cout1                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[0]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|temp[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[0]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[2]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[1]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|temp[3]                         ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_10:T1|Cout1                           ; sec_count:T2|count_10:T1|Cout1                           ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[0]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[2]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[3]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|temp1[1]                         ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[0]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[2]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[3]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|temp1[1]                         ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
+; Not operational: Clock Skew > Data Delay ; sec_count:T2|count_6:T2|Cout1                            ; sec_count:T2|count_6:T2|Cout1                            ; Button1    ; Button1  ; None                       ; None                       ; 8.000 ns                 ;
 +------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
 
 
@@ -780,226 +815,209 @@ applicable agreement for further details.
 +-------+--------------+------------+------+-----------------------------------+----------+
 ; N/A   ; None         ; -4.000 ns  ; CLR  ; sec_count:T2|count_10:T1|Cout1    ; Button2  ;
 ; N/A   ; None         ; -4.000 ns  ; CLR  ; minute_count:T3|count_10:T1|Cout1 ; Button2  ;
+; N/A   ; None         ; -5.000 ns  ; CLR  ; sec_count:T2|count_10:T1|Cout1    ; Button1  ;
 ; N/A   ; None         ; -6.000 ns  ; CLR  ; sec_count:T2|count_10:T1|Cout1    ; CLK_0    ;
-; N/A   ; None         ; -13.000 ns ; CLR  ; sec_count:T2|count_10:T1|Cout1    ; Button1  ;
 ; N/A   ; None         ; -13.000 ns ; CLR  ; sec_count:T2|count_6:T2|Cout1     ; Button2  ;
 ; N/A   ; None         ; -13.000 ns ; CLR  ; minute_count:T3|count_10:T1|Cout1 ; Button1  ;
 ; N/A   ; None         ; -13.000 ns ; CLR  ; minute_count:T3|count_6:T2|Cout1  ; Button2  ;
+; N/A   ; None         ; -14.000 ns ; CLR  ; sec_count:T2|count_6:T2|Cout1     ; Button1  ;
 ; N/A   ; None         ; -15.000 ns ; CLR  ; sec_count:T2|count_6:T2|Cout1     ; CLK_0    ;
-; N/A   ; None         ; -22.000 ns ; CLR  ; sec_count:T2|count_6:T2|Cout1     ; Button1  ;
 ; N/A   ; None         ; -22.000 ns ; CLR  ; minute_count:T3|count_6:T2|Cout1  ; Button1  ;
 ; N/A   ; None         ; -32.000 ns ; CLR  ; minute_count:T3|count_10:T1|Cout1 ; CLK_0    ;
 ; N/A   ; None         ; -41.000 ns ; CLR  ; minute_count:T3|count_6:T2|Cout1  ; CLK_0    ;
 +-------+--------------+------------+------+-----------------------------------+----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; tco                                                                                                                                                                                           ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------+----------+------------+
-; Slack                                   ; Required tco                                        ; Actual tco ; From                                                     ; To       ; From Clock ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------+----------+------------+
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; Button1    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; Button1    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; Button2    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; Button1    ;
-; N/A                                     ; None                                                ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; Button1    ;
-; N/A                                     ; None                                                ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; Button2    ;
-; N/A                                     ; None                                                ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; Button2    ;
-; N/A                                     ; None                                                ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; Button2    ;
-; N/A                                     ; None                                                ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; Button2    ;
-; N/A                                     ; None                                                ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; Button1    ;
-; N/A                                     ; None                                                ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; Button1    ;
-; N/A                                     ; None                                                ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; Button1    ;
-; N/A                                     ; None                                                ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; Button1    ;
-; N/A                                     ; None                                                ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; Button2    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; Button2    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; Button2    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; Button2    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; Button1    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; Button1    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; Button1    ;
-; N/A                                     ; None                                                ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; Button1    ;
-; N/A                                     ; None                                                ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; Button2    ;
-; N/A                                     ; None                                                ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; Button2    ;
-; N/A                                     ; None                                                ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; Button2    ;
-; N/A                                     ; None                                                ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; Button2    ;
-; N/A                                     ; None                                                ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; Button1    ;
-; N/A                                     ; None                                                ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; Button1    ;
-; N/A                                     ; None                                                ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; Button1    ;
-; N/A                                     ; None                                                ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; Button1    ;
-; N/A                                     ; None                                                ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; Button2    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; Button2    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; Button2    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; Button2    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[1]                         ; LED_1[1] ; Button1    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[3]                         ; LED_1[3] ; Button1    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[2]                         ; LED_1[2] ; Button1    ;
-; N/A                                     ; None                                                ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[0]                         ; LED_1[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_5[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_5[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[6] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_5[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_5[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[5] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[4] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_6[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_5[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_5[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_5[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_5[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_4[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_4[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_4[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_4[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_3[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_3[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_3[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[0]                             ; LED_3[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_2[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_2[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_2[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_2[0] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_1[1] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_1[3] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_1[2] ; Button1    ;
-; N/A                                     ; None                                                ; 31.000 ns  ; config:T5|count_4:T1|temp[1]                             ; LED_1[0] ; Button1    ;
-; N/A                                     ; None                                                ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[1]                         ; LED_1[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[3]                         ; LED_1[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[2]                         ; LED_1[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[0]                         ; LED_1[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_5[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[6] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_5[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[5] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[4] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_6[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_5[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_5[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_4[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_4[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_4[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_4[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_3[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_3[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_3[2] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_3[0] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_2[1] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_2[3] ; CLK_0      ;
-; N/A                                     ; None                                                ; 24.000 ns  ; time_trans:T1|count_2500:T1|qout                         ; LED_2[2] ; CLK_0      ;
-; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                                                          ;          ;            ;
-+-----------------------------------------+-----------------------------------------------------+------------+----------------------------------------------------------+----------+------------+
++----------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                  ;
++-------+--------------+------------+----------------------------------------------------------+----------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                     ; To       ; From Clock ;
++-------+--------------+------------+----------------------------------------------------------+----------+------------+
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; Button1    ;
+; N/A   ; None         ; 93.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; Button1    ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; CLK_0      ;
+; N/A   ; None         ; 86.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; CLK_0      ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; Button1    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[6] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[6] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[6] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[6] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; Button1    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[5] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[5] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[5] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[5] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[3] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[3] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[3] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[3] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[4] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[4] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[4] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[4] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[2] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[2] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[2] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[2] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[1] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[1] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[1] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[1] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[0]                        ; LED_6[0] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[3]                        ; LED_6[0] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[2]                        ; LED_6[0] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|cnt1[1]                        ; LED_6[0] ; Button2    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; Button1    ;
+; N/A   ; None         ; 84.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; Button1    ;
+; N/A   ; None         ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; CLK_0      ;
+; N/A   ; None         ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; CLK_0      ;
+; N/A   ; None         ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; CLK_0      ;
+; N/A   ; None         ; 77.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; CLK_0      ;
+; N/A   ; None         ; 76.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 76.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 76.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 76.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[0] ; LED_5[0] ; Button2    ;
+; N/A   ; None         ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[3] ; LED_5[3] ; Button2    ;
+; N/A   ; None         ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2] ; LED_5[2] ; Button2    ;
+; N/A   ; None         ; 75.000 ns  ; hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[1] ; LED_5[1] ; Button2    ;
+; N/A   ; None         ; 69.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 69.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 69.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 69.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; Button1    ;
+; N/A   ; None         ; 67.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; Button1    ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; CLK_0      ;
+; N/A   ; None         ; 60.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; CLK_0      ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[1]                      ; LED_4[1] ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[3]                      ; LED_4[3] ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[2]                      ; LED_4[2] ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_6:T2|temp1[0]                      ; LED_4[0] ; Button2    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; Button1    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; Button1    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; Button1    ;
+; N/A   ; None         ; 58.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; Button1    ;
+; N/A   ; None         ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; CLK_0      ;
+; N/A   ; None         ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; CLK_0      ;
+; N/A   ; None         ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; CLK_0      ;
+; N/A   ; None         ; 51.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; CLK_0      ;
+; N/A   ; None         ; 50.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 50.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 50.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 50.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; MUSIC    ; Button1    ;
+; N/A   ; None         ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[1]                      ; LED_3[1] ; Button2    ;
+; N/A   ; None         ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[3]                      ; LED_3[3] ; Button2    ;
+; N/A   ; None         ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[2]                      ; LED_3[2] ; Button2    ;
+; N/A   ; None         ; 49.000 ns  ; minute_count:T3|count_10:T1|temp[0]                      ; LED_3[0] ; Button2    ;
+; N/A   ; None         ; 43.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 43.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 43.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 43.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; MUSIC    ; Button2    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; Button1    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; Button1    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; Button1    ;
+; N/A   ; None         ; 41.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; Button1    ;
+; N/A   ; None         ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; CLK_0      ;
+; N/A   ; None         ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; CLK_0      ;
+; N/A   ; None         ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; CLK_0      ;
+; N/A   ; None         ; 34.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; CLK_0      ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[1]                         ; LED_2[1] ; Button2    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[3]                         ; LED_2[3] ; Button2    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[2]                         ; LED_2[2] ; Button2    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_6:T2|temp1[0]                         ; LED_2[0] ; Button2    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[1]                         ; LED_1[1] ; Button1    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[3]                         ; LED_1[3] ; Button1    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[2]                         ; LED_1[2] ; Button1    ;
+; N/A   ; None         ; 32.000 ns  ; sec_count:T2|count_10:T1|temp[0]                         ; LED_1[0] ; Button1    ;
+; N/A   ; None         ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[1]                         ; LED_1[1] ; CLK_0      ;
+; N/A   ; None         ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[3]                         ; LED_1[3] ; CLK_0      ;
+; N/A   ; None         ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[2]                         ; LED_1[2] ; CLK_0      ;
+; N/A   ; None         ; 25.000 ns  ; sec_count:T2|count_10:T1|temp[0]                         ; LED_1[0] ; CLK_0      ;
+; N/A   ; None         ; 23.000 ns  ; sec_count:T2|count_10:T1|temp[1]                         ; LED_1[1] ; Button2    ;
+; N/A   ; None         ; 23.000 ns  ; sec_count:T2|count_10:T1|temp[3]                         ; LED_1[3] ; Button2    ;
+; N/A   ; None         ; 23.000 ns  ; sec_count:T2|count_10:T1|temp[2]                         ; LED_1[2] ; Button2    ;
+; N/A   ; None         ; 23.000 ns  ; sec_count:T2|count_10:T1|temp[0]                         ; LED_1[0] ; Button2    ;
+; N/A   ; None         ; 17.000 ns  ; musicins:T6|la_count_6:T4|temp                           ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 17.000 ns  ; musicins:T6|fa_count_7:T3|temp2                          ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 17.000 ns  ; musicins:T6|fa_count_7:T3|temp1                          ; MUSIC    ; CLK_0      ;
+; N/A   ; None         ; 17.000 ns  ; musicins:T6|do_count_10:T2|temp                          ; MUSIC    ; CLK_0      ;
++-------+--------------+------------+----------------------------------------------------------+----------+------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -1028,7 +1046,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Mar 27 13:31:13 2022
+    Info: Processing started: Thu Apr 07 12:11:55 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off elec_clock -c elec_clock
 Info: Parallel compilation is enabled and will use 4 of the 6 processors detected
 Info: Started post-fitting delay annotation
@@ -1038,40 +1056,41 @@ Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "CLK_0" is an undefined clock
     Info: Assuming node "Button1" is an undefined clock
     Info: Assuming node "Button2" is an undefined clock
-Warning: Found 17 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
-    Info: Detected gated clock "hour_count:T4|enter~10" as buffer
+Warning: Found 18 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
     Info: Detected gated clock "hour_count:T4|enter~9" as buffer
+    Info: Detected gated clock "hour_count:T4|enter~8" as buffer
+    Info: Detected gated clock "hour_count:T4|enter~7" as buffer
     Info: Detected ripple clock "minute_count:T3|count_6:T2|Cout1" as buffer
     Info: Detected ripple clock "minute_count:T3|count_10:T1|Cout1" as buffer
-    Info: Detected gated clock "minute_count:T3|enter~20" as buffer
-    Info: Detected gated clock "minute_count:T3|enter~19" as buffer
-    Info: Detected gated clock "minute_count:T3|enter~8" as buffer
-    Info: Detected gated clock "minute_count:T3|enter~7" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~69" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~68" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~67" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~6" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~5" as buffer
+    Info: Detected gated clock "minute_count:T3|enter~4" as buffer
     Info: Detected ripple clock "sec_count:T2|count_6:T2|Cout1" as buffer
     Info: Detected ripple clock "sec_count:T2|count_10:T1|Cout1" as buffer
-    Info: Detected gated clock "time_trans:T1|CLK_1~9" as buffer
-    Info: Detected gated clock "time_trans:T1|CLK_1~8" as buffer
-    Info: Detected gated clock "time_trans:T1|CLK_1~7" as buffer
-    Info: Detected gated clock "time_trans:T1|count_2500:T1|CLK_1~7" as buffer
+    Info: Detected gated clock "time_trans:T1|CLK_1~5" as buffer
+    Info: Detected gated clock "time_trans:T1|CLK_1~4" as buffer
     Info: Detected ripple clock "time_trans:T1|count_2500:T1|qout" as buffer
     Info: Detected ripple clock "config:T5|count_4:T1|temp[1]" as buffer
     Info: Detected ripple clock "config:T5|count_4:T1|temp[0]" as buffer
 Info: Clock "CLK_0" has Internal fmax of 33.33 MHz between source register "musicins:T6|control:T1|counter[0]" and destination register "musicins:T6|fa_count_7:T3|counter[0]" (period= 30.0 ns)
     Info: + Longest register to register delay is 16.000 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC33; Fanout = 19; REG Node = 'musicins:T6|control:T1|counter[0]'
-        Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 10.000 ns; Loc. = SEXP51; Fanout = 2; COMB Node = 'musicins:T6|control:T1|Mux1~7'
-        Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 16.000 ns; Loc. = LC50; Fanout = 6; REG Node = 'musicins:T6|fa_count_7:T3|counter[0]'
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC20; Fanout = 19; REG Node = 'musicins:T6|control:T1|counter[0]'
+        Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 10.000 ns; Loc. = SEXP69; Fanout = 2; COMB Node = 'musicins:T6|control:T1|Mux1~7'
+        Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 16.000 ns; Loc. = LC67; Fanout = 6; REG Node = 'musicins:T6|fa_count_7:T3|counter[0]'
         Info: Total cell delay = 14.000 ns ( 87.50 % )
         Info: Total interconnect delay = 2.000 ns ( 12.50 % )
     Info: - Smallest clock skew is -9.000 ns
         Info: + Shortest clock path from clock "CLK_0" to destination register is 3.000 ns
             Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 25; CLK Node = 'CLK_0'
-            Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC50; Fanout = 6; REG Node = 'musicins:T6|fa_count_7:T3|counter[0]'
+            Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC67; Fanout = 6; REG Node = 'musicins:T6|fa_count_7:T3|counter[0]'
             Info: Total cell delay = 3.000 ns ( 100.00 % )
         Info: - Longest clock path from clock "CLK_0" to source register is 12.000 ns
             Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 25; CLK Node = 'CLK_0'
-            Info: 2: + IC(0.000 ns) + CELL(1.000 ns) = 4.000 ns; Loc. = LC24; Fanout = 9; REG Node = 'time_trans:T1|count_2500:T1|qout'
-            Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 12.000 ns; Loc. = LC33; Fanout = 19; REG Node = 'musicins:T6|control:T1|counter[0]'
+            Info: 2: + IC(0.000 ns) + CELL(1.000 ns) = 4.000 ns; Loc. = LC52; Fanout = 6; REG Node = 'time_trans:T1|count_2500:T1|qout'
+            Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 12.000 ns; Loc. = LC20; Fanout = 19; REG Node = 'musicins:T6|control:T1|counter[0]'
             Info: Total cell delay = 10.000 ns ( 83.33 % )
             Info: Total interconnect delay = 2.000 ns ( 16.67 % )
     Info: + Micro clock to output delay of source is 1.000 ns
@@ -1085,22 +1104,22 @@ Info: Clock "Button1" has Internal fmax of 15.15 MHz between source register "ho
         Info: Total interconnect delay = 2.000 ns ( 22.22 % )
     Info: - Smallest clock skew is -52.000 ns
         Info: + Shortest clock path from clock "Button1" to destination register is 27.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP1; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC34; Fanout = 13; REG Node = 'config:T5|count_4:T1|temp[1]'
+            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~8'
             Info: 4: + IC(0.000 ns) + CELL(6.000 ns) = 27.000 ns; Loc. = LC8; Fanout = 12; REG Node = 'hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2]'
             Info: Total cell delay = 23.000 ns ( 85.19 % )
             Info: Total interconnect delay = 4.000 ns ( 14.81 % )
         Info: - Longest clock path from clock "Button1" to source register is 79.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-            Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-            Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-            Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-            Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-            Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
-            Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC33; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
+            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP33; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~5'
+            Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+            Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+            Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+            Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+            Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+            Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 10: + IC(0.000 ns) + CELL(6.000 ns) = 79.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 67.000 ns ( 84.81 % )
             Info: Total interconnect delay = 12.000 ns ( 15.19 % )
@@ -1115,45 +1134,45 @@ Info: Clock "Button2" has Internal fmax of 15.15 MHz between source register "ho
         Info: Total interconnect delay = 2.000 ns ( 22.22 % )
     Info: - Smallest clock skew is -52.000 ns
         Info: + Shortest clock path from clock "Button2" to destination register is 18.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 5; CLK Node = 'Button2'
-            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_52; Fanout = 4; CLK Node = 'Button2'
+            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC8; Fanout = 12; REG Node = 'hour_count:T4|count_24:T1|lpm_counter:cnt0_rtl_0|dffs[2]'
             Info: Total cell delay = 16.000 ns ( 88.89 % )
             Info: Total interconnect delay = 2.000 ns ( 11.11 % )
         Info: - Longest clock path from clock "Button2" to source register is 70.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 5; CLK Node = 'Button2'
-            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-            Info: 3: + IC(0.000 ns) + CELL(7.000 ns) = 19.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-            Info: 4: + IC(2.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-            Info: 5: + IC(2.000 ns) + CELL(8.000 ns) = 38.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-            Info: 6: + IC(0.000 ns) + CELL(7.000 ns) = 45.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-            Info: 7: + IC(2.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
-            Info: 8: + IC(2.000 ns) + CELL(8.000 ns) = 64.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_52; Fanout = 4; CLK Node = 'Button2'
+            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP34; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~4'
+            Info: 3: + IC(0.000 ns) + CELL(7.000 ns) = 19.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+            Info: 4: + IC(2.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+            Info: 5: + IC(2.000 ns) + CELL(8.000 ns) = 38.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+            Info: 6: + IC(0.000 ns) + CELL(7.000 ns) = 45.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+            Info: 7: + IC(2.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+            Info: 8: + IC(2.000 ns) + CELL(8.000 ns) = 64.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 9: + IC(0.000 ns) + CELL(6.000 ns) = 70.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 60.000 ns ( 85.71 % )
             Info: Total interconnect delay = 10.000 ns ( 14.29 % )
     Info: + Micro clock to output delay of source is 1.000 ns
     Info: + Micro setup delay of destination is 4.000 ns
-Warning: Circuit may not operate. Detected 82 non-operational path(s) clocked by clock "Button1" with clock skew larger than data delay. See Compilation Report for details.
+Warning: Circuit may not operate. Detected 117 non-operational path(s) clocked by clock "Button1" with clock skew larger than data delay. See Compilation Report for details.
 Info: Found hold time violation between source  pin or register "hour_count:T4|count_24:T1|cnt1[0]" and destination pin or register "hour_count:T4|count_24:T1|cnt1[0]" for clock "Button1" (Hold time is 47.0 ns)
     Info: + Largest clock skew is 52.000 ns
         Info: + Longest clock path from clock "Button1" to destination register is 79.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-            Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-            Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-            Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-            Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-            Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
-            Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC33; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
+            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP33; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~5'
+            Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+            Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+            Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+            Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+            Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+            Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 10: + IC(0.000 ns) + CELL(6.000 ns) = 79.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 67.000 ns ( 84.81 % )
             Info: Total interconnect delay = 12.000 ns ( 15.19 % )
         Info: - Shortest clock path from clock "Button1" to source register is 27.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP1; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC34; Fanout = 13; REG Node = 'config:T5|count_4:T1|temp[1]'
+            Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~8'
             Info: 4: + IC(0.000 ns) + CELL(6.000 ns) = 27.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 23.000 ns ( 85.19 % )
             Info: Total interconnect delay = 4.000 ns ( 14.81 % )
@@ -1167,20 +1186,20 @@ Warning: Circuit may not operate. Detected 82 non-operational path(s) clocked by
 Info: Found hold time violation between source  pin or register "hour_count:T4|count_24:T1|cnt1[0]" and destination pin or register "hour_count:T4|count_24:T1|cnt1[0]" for clock "Button2" (Hold time is 47.0 ns)
     Info: + Largest clock skew is 52.000 ns
         Info: + Longest clock path from clock "Button2" to destination register is 70.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 5; CLK Node = 'Button2'
-            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-            Info: 3: + IC(0.000 ns) + CELL(7.000 ns) = 19.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-            Info: 4: + IC(2.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-            Info: 5: + IC(2.000 ns) + CELL(8.000 ns) = 38.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-            Info: 6: + IC(0.000 ns) + CELL(7.000 ns) = 45.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-            Info: 7: + IC(2.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
-            Info: 8: + IC(2.000 ns) + CELL(8.000 ns) = 64.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_52; Fanout = 4; CLK Node = 'Button2'
+            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP34; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~4'
+            Info: 3: + IC(0.000 ns) + CELL(7.000 ns) = 19.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+            Info: 4: + IC(2.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+            Info: 5: + IC(2.000 ns) + CELL(8.000 ns) = 38.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+            Info: 6: + IC(0.000 ns) + CELL(7.000 ns) = 45.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+            Info: 7: + IC(2.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+            Info: 8: + IC(2.000 ns) + CELL(8.000 ns) = 64.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 9: + IC(0.000 ns) + CELL(6.000 ns) = 70.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 60.000 ns ( 85.71 % )
             Info: Total interconnect delay = 10.000 ns ( 14.29 % )
         Info: - Shortest clock path from clock "Button2" to source register is 18.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 5; CLK Node = 'Button2'
-            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_52; Fanout = 4; CLK Node = 'Button2'
+            Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
             Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
             Info: Total cell delay = 16.000 ns ( 88.89 % )
             Info: Total interconnect delay = 2.000 ns ( 11.11 % )
@@ -1193,58 +1212,58 @@ Info: Found hold time violation between source  pin or register "hour_count:T4|c
 Info: tsu for register "sec_count:T2|count_10:T1|Cout1" (data pin = "CLR", clock pin = "Button2") is -4.000 ns
     Info: + Longest pin to register delay is 10.000 ns
         Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_33; Fanout = 32; PIN Node = 'CLR'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
     Info: + Micro setup delay of destination is 4.000 ns
     Info: - Shortest clock path from clock "Button2" to destination register is 18.000 ns
-        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 5; CLK Node = 'Button2'
-        Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-        Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_52; Fanout = 4; CLK Node = 'Button2'
+        Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 12.000 ns; Loc. = SEXP34; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~4'
+        Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
         Info: Total cell delay = 16.000 ns ( 88.89 % )
         Info: Total interconnect delay = 2.000 ns ( 11.11 % )
 Info: tco from clock "Button1" to destination pin "LED_6[6]" through register "hour_count:T4|count_24:T1|cnt1[0]" is 93.000 ns
     Info: + Longest clock path from clock "Button1" to source register is 79.000 ns
-        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-        Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-        Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-        Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-        Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-        Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-        Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
-        Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP3; Fanout = 8; COMB Node = 'hour_count:T4|enter~10'
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC33; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
+        Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP33; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~5'
+        Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+        Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+        Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+        Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+        Info: 8: + IC(2.000 ns) + CELL(7.000 ns) = 63.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+        Info: 9: + IC(2.000 ns) + CELL(8.000 ns) = 73.000 ns; Loc. = SEXP5; Fanout = 8; COMB Node = 'hour_count:T4|enter~9'
         Info: 10: + IC(0.000 ns) + CELL(6.000 ns) = 79.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
         Info: Total cell delay = 67.000 ns ( 84.81 % )
         Info: Total interconnect delay = 12.000 ns ( 15.19 % )
     Info: + Micro clock to output delay of source is 1.000 ns
     Info: + Longest register to pin delay is 13.000 ns
         Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC12; Fanout = 24; REG Node = 'hour_count:T4|count_24:T1|cnt1[0]'
-        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC14; Fanout = 1; COMB Node = 'hour_count:T4|four2seven:T2|Mux0~9'
-        Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_5; Fanout = 0; PIN Node = 'LED_6[6]'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC51; Fanout = 1; COMB Node = 'hour_count:T4|four2seven:T2|Mux0~9'
+        Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_40; Fanout = 0; PIN Node = 'LED_6[6]'
         Info: Total cell delay = 11.000 ns ( 84.62 % )
         Info: Total interconnect delay = 2.000 ns ( 15.38 % )
 Info: th for register "minute_count:T3|count_6:T2|Cout1" (data pin = "CLR", clock pin = "Button1") is 56.000 ns
     Info: + Longest clock path from clock "Button1" to destination register is 62.000 ns
-        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_61; Fanout = 2; CLK Node = 'Button1'
-        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC20; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
-        Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP36; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~9'
-        Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC42; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
-        Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC71; Fanout = 5; REG Node = 'sec_count:T2|count_6:T2|Cout1'
-        Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP67; Fanout = 4; COMB Node = 'minute_count:T3|enter~20'
-        Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC70; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
-        Info: 8: + IC(2.000 ns) + CELL(6.000 ns) = 62.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 2; CLK Node = 'Button1'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC33; Fanout = 11; REG Node = 'config:T5|count_4:T1|temp[0]'
+        Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP33; Fanout = 5; COMB Node = 'time_trans:T1|CLK_1~5'
+        Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC48; Fanout = 6; REG Node = 'sec_count:T2|count_10:T1|Cout1'
+        Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 37.000 ns; Loc. = LC30; Fanout = 7; REG Node = 'sec_count:T2|count_6:T2|Cout1'
+        Info: 6: + IC(2.000 ns) + CELL(8.000 ns) = 47.000 ns; Loc. = SEXP22; Fanout = 4; COMB Node = 'minute_count:T3|enter~69'
+        Info: 7: + IC(0.000 ns) + CELL(7.000 ns) = 54.000 ns; Loc. = LC26; Fanout = 6; REG Node = 'minute_count:T3|count_10:T1|Cout1'
+        Info: 8: + IC(2.000 ns) + CELL(6.000 ns) = 62.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
         Info: Total cell delay = 52.000 ns ( 83.87 % )
         Info: Total interconnect delay = 10.000 ns ( 16.13 % )
     Info: + Micro hold delay of destination is 4.000 ns
     Info: - Shortest pin to register delay is 10.000 ns
         Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_33; Fanout = 32; PIN Node = 'CLR'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC15; Fanout = 3; REG Node = 'minute_count:T3|count_6:T2|Cout1'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC15; Fanout = 4; REG Node = 'minute_count:T3|count_6:T2|Cout1'
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 187 megabytes
-    Info: Processing ended: Sun Mar 27 13:31:13 2022
+    Info: Processing ended: Thu Apr 07 12:11:55 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

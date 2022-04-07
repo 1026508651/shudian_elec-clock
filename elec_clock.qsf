@@ -64,3 +64,6 @@ set_global_assignment -name VHDL_FILE la_count_6.vhd
 set_global_assignment -name VHDL_FILE fa_count_7.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE elec_clock.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SOURCE_FILE elec_clock.vmf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE elec_clock.vwf
+set_global_assignment -name CHECK_OUTPUTS OFF

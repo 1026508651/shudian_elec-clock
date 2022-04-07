@@ -70,7 +70,7 @@ From           : hour_count:T4|count_24:T1|cnt1[0]
 To             : hour_count:T4|count_24:T1|cnt1[0]
 From Clock     : Button1
 To Clock       : Button1
-Failed Paths   : 82
+Failed Paths   : 117
 
 Type           : Clock Hold: 'Button2'
 Slack          : Not operational: Clock Skew > Data Delay
@@ -90,7 +90,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 164
+Failed Paths   : 199
 
 --------------------------------------------------------------------------------------
 

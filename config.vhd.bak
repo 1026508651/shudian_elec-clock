@@ -21,7 +21,7 @@ architecture main of config is
 	component count_4 is
 	port(
 		CLK:in std_logic;
-		output:out std_logic_vector(3 downto 0);
+		output:out std_logic_vector(1 downto 0);
 		Change_En:out std_logic
 	);
 	end component count_4;
@@ -42,7 +42,7 @@ architecture main of config is
 	Change_Sec<=diverse1(1);
 	Change_Min<=diverse1(2);
 	Change_Hour<=diverse1(3);
-	Blick_Control_Sec<=not diverse2(1);
-	Blick_Control_Min<=not diverse2(2);
-	Blick_Control_Hou<=not diverse2(3);
+	Blick_Control_Sec<=diverse2(1);
+	Blick_Control_Min<=diverse2(2);
+	Blick_Control_Hou<=diverse2(3);
 end main;

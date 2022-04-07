@@ -22,15 +22,11 @@ begin
 			else
 				temp<=temp+1;
 			end if;
+			
 		end if;
 	end process;
-	process(temp)
-	begin	
-		if(temp="00")then
-			Change_En<='1';
-		else
-			Change_En<='0';
-		end if;
-	end process;
+	with temp select
+	Change_En<='0' when "00",
+			   '1' when others;
 	output<=temp;
 end art;

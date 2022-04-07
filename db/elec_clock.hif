@@ -52,49 +52,6 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 
 # end
 # entity
-sec_count
-# storage
-db|elec_clock.(3).cnf
-db|elec_clock.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sec_count.vhd
-4d3cf1a47c99667ba3eba570c0ebecd1
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(led_1)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(led_2)
-3 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-sec_count:T2
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 count_10
 # storage
 db|elec_clock.(4).cnf
@@ -167,49 +124,6 @@ USR
 # hierarchies {
 sec_count:T2|count_6:T2
 minute_count:T3|count_6:T2
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-minute_count
-# storage
-db|elec_clock.(6).cnf
-db|elec_clock.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-minute_count.vhd
-fe671cb5e9f2d983ff7eaf1741d89a
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(led_3)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(led_4)
-3 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-minute_count:T3
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
@@ -376,105 +290,6 @@ d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
 
 # end
 # entity
-config
-# storage
-db|elec_clock.(12).cnf
-db|elec_clock.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-config.vhd
-3878e014788a2a3b2d5624bfd6c4b63
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-config:T5
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-musicins
-# storage
-db|elec_clock.(15).cnf
-db|elec_clock.(15).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-musicins.vhd
-85d4d3c6c8d185272ebf68d75e5b171
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-musicins:T6
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-control
-# storage
-db|elec_clock.(16).cnf
-db|elec_clock.(16).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-control.vhd
-a5ab628a7d37f38adf3cc9891fd7873
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-musicins:T6|control:T1
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 do_count_10
 # storage
 db|elec_clock.(17).cnf
@@ -566,82 +381,6 @@ ON
 }
 # hierarchies {
 musicins:T6|la_count_6:T4
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-elec_clock
-# storage
-db|elec_clock.(0).cnf
-db|elec_clock.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-elec_clock.vhd
-cd818ec828e26cc267d8be941fec43e3
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-hour_count
-# storage
-db|elec_clock.(9).cnf
-db|elec_clock.(9).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hour_count.vhd
-ea5982eb7020b521d0bc102b3f1c71dc
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(led_5)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(led_6)
-6 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-hour_count:T4
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
@@ -2098,18 +1837,18 @@ data0
 
 # end
 # entity
-count_2500
+config
 # storage
-db|elec_clock.(2).cnf
-db|elec_clock.(2).cnf
+db|elec_clock.(12).cnf
+db|elec_clock.(12).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-count_2500.vhd
-aac91f16b22e7f56a4371828f29a9b
+config.vhd
+3878e014788a2a3b2d5624bfd6c4b63
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -2122,7 +1861,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-time_trans:T1|count_2500:T1
+config:T5
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
@@ -2142,7 +1881,7 @@ ON
 # case_insensitive
 # source_file
 two2four.vhd
-2284a93c5e86adc69a7ad476e6d47f
+31596661d5c6513389b9f451dafa836d
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -2186,7 +1925,7 @@ ON
 # case_insensitive
 # source_file
 count_4.vhd
-2937e79b627ac475e1dd8f5de26447
+55b31ccbe5f929a2235e3a44cd23840
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -2206,6 +1945,267 @@ USR
 }
 # hierarchies {
 config:T5|count_4:T1
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_2500
+# storage
+db|elec_clock.(2).cnf
+db|elec_clock.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count_2500.vhd
+f2964417557d55fbd2b7081bfcd076
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+time_trans:T1|count_2500:T1
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+hour_count
+# storage
+db|elec_clock.(9).cnf
+db|elec_clock.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hour_count.vhd
+8952d567f7262942cdc5a58b70214cd4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_5)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_6)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+hour_count:T4
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+control
+# storage
+db|elec_clock.(16).cnf
+db|elec_clock.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+control.vhd
+50318ff2ae826f674b32c59868b4f5d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+musicins:T6|control:T1
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+sec_count
+# storage
+db|elec_clock.(3).cnf
+db|elec_clock.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sec_count.vhd
+a32881bacca2c16f8a91634d3a0dd64
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_2)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sec_count:T2
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+minute_count
+# storage
+db|elec_clock.(6).cnf
+db|elec_clock.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+minute_count.vhd
+4b21feb756bd9b865725d3a74e4a5e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(led_3)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(led_4)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+minute_count:T3
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+elec_clock
+# storage
+db|elec_clock.(0).cnf
+db|elec_clock.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+elec_clock.vhd
+522102e38d0bc29a97a676b80551969
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+musicins
+# storage
+db|elec_clock.(15).cnf
+db|elec_clock.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+musicins.vhd
+b08c9c69a8e163e9e3ad11e3d73ea1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+musicins:T6
 }
 # lmf
 d:|apps|quartusii 9.0|quartus|lmf|maxplus2.lmf

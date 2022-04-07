@@ -53,7 +53,7 @@ begin
 			when "0111" => fa_4 <='1'; 
 			when "1000" => fa_4 <='1'; 
 			when "1001" => fa_4 <='1'; 
-			when others => stop <='0';
+			when others => do_1<='0';
 		end case;
 	end process;		
 

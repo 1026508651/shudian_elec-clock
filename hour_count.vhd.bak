@@ -28,8 +28,8 @@ component count_24 is
 end component count_24;
 component four2seven is
 	port(
-		input:std_logic_vector(3 downto 0);
-		output:std_logic_vector(6 downto 0)
+		input:in std_logic_vector(3 downto 0);
+		output:out std_logic_vector(6 downto 0)
 	);
 end component four2seven;
 begin

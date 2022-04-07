@@ -52,7 +52,7 @@ architecture main of musicins is
 	begin
 	 T1:control port map(beginning=>Cout3,part=>STD_ONE,do_1=>en_do,fa_4=>en_fa,la_6=>en_la);
 	 T2:do_count_10 port map(EN=>en_do,CLK=>CLK_0,output=>out_do);
-	 T3:fa_count_7 port map(EN=>en_do,CLK=>CLK_0,output=>out_fa); 
-	 T4:la_count_6 port map(EN=>en_do,CLK=>CLK_0,output=>out_la);
+	 T3:fa_count_7 port map(EN=>en_fa,CLK=>CLK_0,output=>out_fa); 
+	 T4:la_count_6 port map(EN=>en_la,CLK=>CLK_0,output=>out_la);
 	 MUSIC<=out_do or out_fa or out_la; 
 end main;

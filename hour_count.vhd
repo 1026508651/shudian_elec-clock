@@ -37,9 +37,9 @@ begin
 	T1:count_24 port map(CLK=>enter,CLR=>CLR,temp1=>L5,temp10=>L6_1);
 	T2:four2seven port map(input=>L6_1,output=>L6);
 	with Blick_Control_Hou select
-	LED_5<="ZZZZ" when '1',
+	LED_5<="ZZZZ" when '0',
 		   L5 when others;
 	with Blick_Control_Hou select
-	LED_6<="ZZZZZZZ" when '1',
+	LED_6<="ZZZZZZZ" when '0',
 		   L6 when others;
 end main;
